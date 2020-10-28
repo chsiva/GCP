@@ -32,5 +32,8 @@ S3 Glacier         --- Cloud storage Archieve
 cloud watch        --- Cloud Monitoring
 cloud Trail        --- Cloud Audit Logs
 
+# Messaging/Notifications
+SNS.   ---  Pub/sub
+SQS.   ---
 
 
