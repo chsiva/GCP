@@ -1,0 +1,36 @@
+https://cloud.google.com/docs/compare/aws/?_ga=2.124102730.-1782596712.1603843653
+
+
+# AWS.                        GCP
+IAM is same
+
+Compute
+EC2 instance       ---     VM Instance
+AMI                ---     Image
+Security groups.   ---     Compute Engine Firewall rules
+Autoscaling        ---     Compute Engine Auto scaling
+ELB                ---     Google Cloud Load Balancer
+NLB                ---     Goolge Network Load Balanacer (Layer 4)
+ALB                ---     Google App Load Balancer ( Layer 7)
+Classic            ---            
+
+# Networking
+Elastic IP         ---    static IP
+Private IP         ---    Internal IP
+Public IP          ---    Ephemeral IP
+VPC                ---    VPC
+VPC Peering        ---    VPC Network peering, Shared VPC's
+Route 53           ---    Cloud DNS
+
+
+# storage
+EBS                --- persistant disks
+S3                 --- cloud storage
+S3 Glacier         --- Cloud storage Archieve
+
+# Monitoring
+cloud watch        --- Cloud Monitoring
+cloud Trail        --- Cloud Audit Logs
+
+
+
