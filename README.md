@@ -11,7 +11,8 @@ Q. Images(like AMI):
    
 Q. Steps to Create Instance:
    
-     console > vm instances tab on left side > Select Region > Machine config (Instance type (e2 micro/medium) > Add Firewall -> Add SSH Key-> Click Launch
+     console > vm instances tab on left side > Select Region > Machine config (Instance type (e2 micro/medium) >
+     Add Firewall -> Add SSH Key-> Click Launch
 
    
 Q. Connecting to instances:
