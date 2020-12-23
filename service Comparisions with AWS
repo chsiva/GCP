@@ -5,6 +5,7 @@ https://cloud.google.com/docs/compare/aws/?_ga=2.124102730.-1782596712.160384365
 AWS Accounts                 Projects
 Tags                         Labels
 awscli                       gcloud
+vpc are region based         vpc are global
 
 Compute
 EC2 instance       ---     Compute Engine
