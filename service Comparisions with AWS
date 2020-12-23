@@ -6,6 +6,7 @@ IAM is same
 
 Compute
 EC2 instance       ---     VM Instance
+AWS Lamda          ---     Cloud Functions
 AMI                ---     Image
 Security groups.   ---     Compute Engine Firewall rules
 Autoscaling        ---     Compute Engine Auto scaling
