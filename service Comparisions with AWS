@@ -7,7 +7,7 @@ Tags                         Labels
 awscli                       gcloud
 
 Compute
-EC2 instance       ---     VM Instance
+EC2 instance       ---     Compute Engine
 AWS Lamda          ---     Cloud Functions
 AMI                ---     Image
 Security groups.   ---     Compute Engine Firewall rules
