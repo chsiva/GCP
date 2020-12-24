@@ -1,0 +1,30 @@
+For the following commands to work, you need to have AWS CLI and gstuil installed. For gsutil, you can use the GCP cloud shell. For AWS CLI , you can provision an Aaazon Linux EC2 insances which comes with the S3 CLI Installed. 
+### List buckets in AWS S3
+```
+aws s3 ls
+```
+
+### List buckets in GCP Cloud Storage
+```
+gsutil ls
+```
+
+### Make a new Bucket in S3
+```
+aws s3 mb s3://new-bucket-mdev
+```
+
+### Make a new Bucket in GCP
+```
+gsutil mb gs://new-bucket-mdev
+```
+
+### Copy local file to a bucket in AWS S3
+```
+aws s3 cp file.txt s3://new-bucket-mdev
+```
+
+### Copy local file to a bucket in GCP Cloud Storage
+```
+gsutil cp file.txt gs://new-bucket-mdev
+```
