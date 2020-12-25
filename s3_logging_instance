@@ -1,0 +1,187 @@
+instance-logging-lab-s3
+Remote access
+ 
+ 
+
+Enable connecting to serial ports 
+Logs
+Cloud Logging
+
+Serial port 1 (console)
+
+ More
+Instance Id
+3554520575630674030
+Machine type
+e2-micro (2 vCPUs, 1 GB memory)
+Reservation
+Automatically choose
+CPU platform
+Intel Haswell
+Display device
+Turn on a display device if you want to use screen capturing and recording tools.
+
+
+Turn on display device
+Zone
+us-east1-b
+Labels
+None
+Creation time
+Dec 24, 2020, 7:46:57 PM
+Network interfaces
+Name	Network	Subnetwork	Primary internal IP	Alias IP ranges	External IP	Network Tier 	IP forwarding	Network details
+nic0	default	default	10.142.0.4	—	
+35.227.84.175 (ephemeral)
+Premium	
+Off
+Public DNS PTR Record
+None
+Firewalls
+
+
+Allow HTTP traffic
+
+Allow HTTPS traffic
+Network tags
+None
+Deletion protection
+
+Enable deletion protection
+When deletion protection is enabled, instance cannot be deleted. Learn more
+
+Confidential VM service 
+Disabled
+
+Boot disk
+Name	Image	Size (GB)	Device name	Type	Encryption	Mode	When deleting instance
+instance-logging-lab-s3
+debian-10-buster-v20201216	10	instance-logging-lab-s3	
+Standard persistent disk
+Google managed
+Boot, read/write
+Delete disk
+Additional disks
+None
+Local disks
+None
+Preserved state size
+0 GB
+
+Shielded VM 
+To edit Shielded VM features you need to stop the instance first.
+
+Turn on all settings for the most secure configuration.
+
+
+Turn on Secure Boot 
+
+Turn on vTPM 
+
+Turn on Integrity Monitoring 
+Availability policies
+Preemptibility	
+Off (recommended)
+On host maintenance	
+Migrate VM instance (recommended)
+Automatic restart	
+On (recommended)
+Custom metadata
+lab-logs-bucket	
+gs://samplebkt_1/
+startup-script	
+#! /bin/bash
+
+#
+# Echo commands as they are run, to make debugging easier.
+# GCE startup script output shows up in "/var/log/syslog" .
+#
+set -x
+
+
+#
+# Stop apt-get calls from trying to bring up UI.
+#
+export DEBIAN_FRONTEND=noninteractive
+
+
+#
+# Make sure installed packages are up to date with all security patches.
+#
+apt-get -yq update
+apt-get -yq upgrade
+
+
+#
+# Install Google's Stackdriver logging agent, as per
+# https://cloud.google.com/logging/docs/agent/installation
+#
+curl -sSO https://dl.google.com/cloudagents/install-logging-agent.sh
+bash install-logging-agent.sh
+
+
+#
+# Install and run the "stress" tool to max the CPU load for a while.
+#
+apt-get -yq install stress
+stress -c 8 -t 120
+
+
+#
+# Report that we're done.
+#
+
+# Metadata should be set in the "lab-logs-bucket" attribute using the "gs://mybucketname/" format.
+log_bucket_metadata_name=lab-logs-bucket
+log_bucket_metadata_url="http://metadata.google.internal/computeMetadata/v1/instance/attributes/${log_bucket_metadata_name}"
+worker_log_bucket=$(curl -H "Metadata-Flavor: Google" "${log_bucket_metadata_url}")
+
+# We write a file named after this machine.
+worker_log_file="machine-$(hostname)-finished.txt"
+echo "Phew!  Work completed at $(date)" >"${worker_log_file}"
+
+# And we copy that file to the bucket specified in the metadata.
+echo "Copying the log file to the bucket..."
+gsutil cp "${worker_log_file}" "${worker_log_bucket}"
+ Less
+SSH Keys
+
+Block project-wide SSH keys
+None
+Service account
+802657439862-compute@developer.gserviceaccount.com
+Cloud API access scopes
+BigQuery	
+Disabled
+Bigtable Admin	
+Disabled
+Bigtable Data	
+Disabled
+Cloud Datastore	
+Disabled
+Cloud Debugger	
+Disabled
+Cloud Pub/Sub	
+Disabled
+Cloud Source Repositories	
+Disabled
+Cloud SQL	
+Disabled
+Compute Engine	
+Disabled
+Service Control	
+Enabled
+Service Management	
+Read Only
+Stackdriver Logging API	
+Write Only
+Stackdriver Monitoring API	
+Write Only
+Stackdriver Trace	
+Write Only
+Storage	
+Write Only
+Task queue	
+Disabled
+User info	
+Disabled
