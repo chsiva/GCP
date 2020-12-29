@@ -1,0 +1,2 @@
+# create gcp custom images
+gcloud compute images create web-v1 --family=webserver --source-disk=web-1 --source-disk-zone=us-central1-a
