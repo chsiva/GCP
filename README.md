@@ -38,3 +38,19 @@ Q. Create Bucket
       
 # Fine graned: bucket level ACL or Uniform: IAM level
 # delete, upload s3 same as aws
+
+# gcloud vs gsutil
+
+1. The gsutil command is used only for Cloud Storage.
+
+2. With the gcloud command, you can interact with other Google Cloud products like the App Engine, Google Kubernetes Engine etc. You can have a look here and here for more info.
+
+The gsutil is a Python application that lets you access Google Cloud Storage from the command line. You can use gsutil to do a wide range of bucket and object management tasks, including:
+
+Creating and deleting buckets. Uploading, downloading, and deleting objects. Listing buckets and objects. Moving, copying, and renaming objects. Editing object and bucket ACLs.
+
+The gcloud command-line interface is the primary CLI tool to create and manage Google Cloud resources. You can use this tool to perform many common platform tasks either from the command line or in scripts and other automations.
+
+For example, you can use the gcloud CLI to create and manage:
+
+Google Compute Engine virtual machine instances and other resources, Google Cloud SQL instances, Google Kubernetes Engine clusters, Google Cloud Dataproc clusters and jobs, Google Cloud DNS managed zones and record sets, Google Cloud Deployment manager deployments.
