@@ -1,0 +1,9 @@
+# Serverless, highly scalable, and cost-effective multi-cloud data warehouse designed for business agility.
+
+1. New customers get $300 in free credits to spend on Google Cloud during the first 90 days. 
+2. All customers get 10 GB storage and up to 1 TB queries/month, completely free of charge.
+
+# Today, we are introducing BigQuery Omni,
+a flexible, multi-cloud analytics solution that lets you cost-effectively access and securely analyze data across Google Cloud, Amazon Web Services (AWS),
+and Azure (coming soon), without leaving the familiar BigQuery user interface (UI). 
+Using standard SQL and the same BigQuery APIs our customers love, you will be able to break down data silos and gain critical business insights from a single pane of glass. And because BigQuery Omni is powered by Anthos, you will be able to query data without having to manage the underlying infrastructure.
