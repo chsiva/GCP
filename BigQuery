@@ -7,3 +7,16 @@
 a flexible, multi-cloud analytics solution that lets you cost-effectively access and securely analyze data across Google Cloud, Amazon Web Services (AWS),
 and Azure (coming soon), without leaving the familiar BigQuery user interface (UI). 
 Using standard SQL and the same BigQuery APIs our customers love, you will be able to break down data silos and gain critical business insights from a single pane of glass. And because BigQuery Omni is powered by Anthos, you will be able to query data without having to manage the underlying infrastructure.
+
+# Compose new Query ( SQL )
+SELECT
+  name, gender,
+  SUM(number) AS total
+FROM
+  `bigquery-public-data.usa_names.usa_1910_2013`
+GROUP BY
+  name, gender
+ORDER BY
+  total DESC
+LIMIT
+  10
