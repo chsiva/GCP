@@ -54,3 +54,10 @@ The gcloud command-line interface is the primary CLI tool to create and manage G
 For example, you can use the gcloud CLI to create and manage:
 
 Google Compute Engine virtual machine instances and other resources, Google Cloud SQL instances, Google Kubernetes Engine clusters, Google Cloud Dataproc clusters and jobs, Google Cloud DNS managed zones and record sets, Google Cloud Deployment manager deployments.
+
+
+# BigQuery vs BigTable
+
+BigQuery is a query Engine for datasets that don't change much, or change by appending. It's a great choice when your queries require a "table scan" or the need to look across the entire database. Think sums, averages, counts, groupings. BigQuery is what you use when you have collected a large amount of data, and need to ask questions about it.
+
+BigTable is a database. It is designed to be the foundation for a large, scaleable application. Use BigTable when you are making any kind of app that needs to read and write data, and scale is a potential issue.
