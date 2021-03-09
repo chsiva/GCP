@@ -1,32 +1,15 @@
-# Data proc Features:
 
-With your existing MapReduce, you can operate on an immense amount of data each day without any overhead worries.
-With the in-built monitoring system, you can transfer your cluster data to your applications. You can get quick-reports from the system and also have the feature of storing data in Google’s BigQuery.
-Quick launch and delete smaller clusters stored in blob storage, as and when required using Spark (Spark SQL, PySpark, Spark shell).
-Spark Machine Learning Libraries and Data Science to customize and run classification algorithms.
+All are categorized as Big Data processing and distribution.
+
+# Dataproc
+1. Dataproc supports manual provision to cluster and If one prefers a hands-on Dev-ops approach, then choose Datapro
+2. Also, If systems are Hadoop dependent, then it is wise to choose Dataproc over Dataflow or Dataprep.
+
+# Data Flow: 
+Dataflow supports automatic provision to clusters. 
+if you prefer a serverless approach, then select Dataflow
 
 
-# Dataflow is a fully-managed, scalable data processing service for executing batch, stream, and ETL processing patterns. 
-
-Cloud Dataflow frees you from operational tasks like resource management and performance optimization, handles out-of-order data, and is integrated with other GCP and open source technology.
-
-Features:
-
-ETL(Extract, transform, and load) data into multiple data warehouses at the same time.
-Dataflow is considered as MapReduce replacement to handle large number of parallelization tasks.
-It can scan real-time, user, management, financial, or retail sales data.
-Processes immense amounts of data for research and predictions with data science techniques. Such as genomics, weather, and financial data.
-
-What is Dataprep? Its Features
-Dataprep was created to solve three major problems, i.e., lack of data visualization, redundant data, and slow processing. Dataprep allows users to explore data visually by transforming the file into CSV, JSON, or in a graphical table format.
-
-Dataprep can easily handle clusters and datasets in the size of TBs. Dataprep is used only as a medium of processing data for further use, such as in BigQuery.
-
-Sometimes, with the scale of data usage, there occurs a problem with security. Hence Google Cloud provides Dataprep with its own Identity and Access Management.
-
-Features:
-
-One can prepare the dataset by removing the redundant data with the help of ML and Data Science.
-You can transform raw data into a visual representation, such as graphs and tables.
-One can keep the security in check with reduced exposure to the dataset.
-
+# Dataprep
+helps to prepare and clean the data for future use.
+Dataprep, on the other hand, is UI-driven.
