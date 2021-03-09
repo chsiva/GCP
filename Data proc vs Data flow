@@ -1,1 +1,9 @@
+Google Cloud Dataflow is a fully-managed, scalable data processing service for executing batch, stream, and ETL processing patterns. 
+Cloud Dataflow frees you from operational tasks like resource management and performance optimization, handles out-of-order data, and is integrated with other GCP and open source technology.
 
+# Features:
+
+1. With your existing MapReduce, you can operate on an immense amount of data each day without any overhead worries.
+2. With the in-built monitoring system, you can transfer your cluster data to your applications. You can get quick-reports from the system and also have the feature of storing data in Google’s BigQuery.
+3. Quick launch and delete smaller clusters stored in blob storage, as and when required using Spark (Spark SQL, PySpark, Spark shell).
+4. Spark Machine Learning Libraries and Data Science to customize and run classification algorithms.
