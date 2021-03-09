@@ -10,6 +10,7 @@ vpc are region based         vpc are global
 Compute
 EC2 instance       ---     Compute Engine
 AWS Lamda          ---     Cloud Functions
+Cloud Formation.   ---     Cloud Deployment Manager
 AMI                ---     Image
 Security groups.   ---     Compute Engine Firewall rules
 Autoscaling        ---     Compute Engine Auto scaling
