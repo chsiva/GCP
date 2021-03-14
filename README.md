@@ -1,3 +1,7 @@
+#gsutil commands
+https://cloud.google.com/storage/docs/gsutil/commands/cp
+
+
 # GCP
 GCP VS AWS
 
