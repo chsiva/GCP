@@ -1,3 +1,7 @@
 gcloud auth login
 gcloud config set project testingpjct-dev
 gcloud secrets versions access 1 --secret="abc"
+
+
+gcloud auth activate-service-account --key-file=${gcp}
+gcloud secrets versions access 1 --secret="abc" > /tmp/secret.txt
