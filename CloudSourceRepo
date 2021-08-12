@@ -1,0 +1,19 @@
+create CSR repo setup and upload code
+
+ssh-keygen -t rsa -C "user@example.com"
+cd ~/.ssh
+cat id_rsa.pub
+
+and upload in register ssh-key. #https://source.cloud.google.com/user/ssh_keys?register=true
+ 
+ git clone https://source.developers.google.com/p/<PROJECT_ID>/r/<REPOSITORY_NAME>
+ 
+ /home/shivavza/cloudshell_open/terraform_provion_gcs
+ 
+ 
+ do changes/add code
+ git status
+ git add .
+ git config --global user.email "***@gmail.com"
+ git config --global user.name "shiva vza"
+ git config --global user.name "shiva vza"
