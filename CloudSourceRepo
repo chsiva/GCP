@@ -17,3 +17,12 @@ and upload in register ssh-key. #https://source.cloud.google.com/user/ssh_keys?r
  git config --global user.email "***@gmail.com"
  git config --global user.name "shiva vza"
  git config --global user.name "shiva vza"
+
+References:
+
+https://cloud.google.com/build/docs/overview
+
+https://stackoverflow.com/questions/60825651/how-can-i-call-gcloud-commands-from-a-shell-script-during-a-build-step
+
+https://cloud.google.com/source-repositories/docs/integrating-with-cloud-build
+
