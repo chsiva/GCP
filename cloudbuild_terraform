@@ -2,3 +2,7 @@ https://cloud.google.com/architecture/managing-infrastructure-as-code
 
 https://github.com/GoogleCloudPlatform/solutions-terraform-cloudbuild-gitops/blob/HEAD/cloudbuild.yaml
 
+https://cobalt.io/blog/iac-pipelines-with-terraform-and-cloud-build
+
+https://github.com/tfutils/tfenv
+
