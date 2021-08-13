@@ -7,8 +7,6 @@ steps:
     echo "enter 1 bash commannd from GitHub"
     terraform -v
     #gcloud version
-    #pwd
-    #whoami
     
     
     #https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/gcp-get-started
