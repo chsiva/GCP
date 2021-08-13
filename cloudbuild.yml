@@ -5,9 +5,10 @@ steps:
   - '-c'
   - |
     echo "enter 1 bash commannd from GitHub"
-    gcloud version
-    pwd
-    whoami
+    terraform -v
+    #gcloud version
+    #pwd
+    #whoami
 
 
 
