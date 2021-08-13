@@ -4,8 +4,7 @@ steps:
   args:
   - '-c'
   - |
-    echo "enter 1 bash command per line"
-    ls -la
+    echo "enter 1 bash commannd from GitHub"
     gcloud version
     pwd
     whoami
