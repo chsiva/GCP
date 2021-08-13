@@ -6,6 +6,7 @@ steps:
   - |
     echo "enter 1 bash command per line"
     ls -la
+    gcloud version
 
 
 
