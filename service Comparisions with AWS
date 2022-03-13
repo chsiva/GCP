@@ -41,4 +41,5 @@ cloud Trail        --- Cloud Audit Logs
 SNS.   ---  Pub/sub
 SQS.   ---
 
-
+Cloud logging - Store, search, analyze, monitor, and alert on log data and events from Google Cloud and AWS. ex: AWS cloud trail
+cloud monitor - Monitoring provides visibility into the performance, availability, and overall health of cloud-powered applications. ex: AWS cloud watch
