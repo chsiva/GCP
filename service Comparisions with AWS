@@ -43,3 +43,12 @@ SQS.   ---
 
 Cloud logging - Store, search, analyze, monitor, and alert on log data and events from Google Cloud and AWS. ex: AWS cloud trail
 cloud monitor - Monitoring provides visibility into the performance, availability, and overall health of cloud-powered applications. ex: AWS cloud watch
+
+WIF - Workload identity Federation
+
+With identity federation, you can use Identity and Access Management (IAM) to grant external identities IAM roles, 
+including the ability to impersonate service accounts. 
+This lets you access resources directly, using a short-lived access token, and eliminates the maintenance and security burden associated with service account keys.
+
+https://cloud.google.com/iam/docs/workload-identity-federation
+
