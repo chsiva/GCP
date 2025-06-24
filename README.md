@@ -65,3 +65,19 @@ Google Compute Engine virtual machine instances and other resources, Google Clou
 BigQuery is a query Engine for datasets that don't change much, or change by appending. It's a great choice when your queries require a "table scan" or the need to look across the entire database. Think sums, averages, counts, groupings. BigQuery is what you use when you have collected a large amount of data, and need to ask questions about it.
 
 BigTable is a database. It is designed to be the foundation for a large, scaleable application. Use BigTable when you are making any kind of app that needs to read and write data, and scale is a potential issue.
+
+
+# Composer
+
+Composer is an orchestration tool > it has steps to perform actions like create cluster > Run Pyspark Job and delete cluster)
+
+Composer ( instance ) in backend GKE will run and have Airflow inside
+
+main components: 
+
+  1. scheduler ( job schedule "schedule_interval  - we have enterprose schedule called Tidal or we can use GCP native scheduler ( Run, reparse
+  2. worker (execute whatever inside dags) and
+  3. webserver (UI)
+
+Project, region, ip address, subnets, required version, size ( small, meduim, large)
+   workload configuration  can be scalable upto 28 CPU, Memoney might be 80 gb and storage 10GB)
