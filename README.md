@@ -18,6 +18,13 @@
 | Orchestrate: start Dataflow → wait → load to BQ → notify | **Cloud Composer** |
 | Batch ETL with large Spark transformations               | **Dataproc**       |
 
+You can combine these tools:
+
+  Use Cloud Composer to orchestrate a workflow
+  It starts a Dataflow job to process streaming data
+  Then launches a Dataproc Spark job for batch analytics
+  Finally sends results to BigQuery, and alerts via Slack/Email
+
 
 
 #gsutil commands
