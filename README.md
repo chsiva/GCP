@@ -25,6 +25,15 @@ You can combine these tools:
   Then launches a Dataproc Spark job for batch analytics
   Finally sends results to BigQuery, and alerts via Slack/Email
 
+| Feature                       | Dataflow                                                                                    | Dataproc                                                                                        |
+| ----------------------------- | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Type of Service**           | Fully managed, serverless stream and batch processing (Apache Beam)                         | Managed Hadoop/Spark cluster service                                                            |
+| **Best For**                  | Event-driven, streaming ETL and batch pipelines; easy integration with Pub/Sub, GCS         | Large batch processing jobs using Hadoop/Spark; running legacy workloads                        |
+| **Use Case in Migration**     | Continuous data ingestion & transformation; streaming migration from message queues or logs | Bulk data migration involving complex Spark/Hadoop jobs or lift-and-shift of existing pipelines |
+| **Complexity**                | Easier to write pipelines in Apache Beam; no cluster management                             | More control and flexibility; requires cluster management and Spark/Hadoop expertise            |
+| **Cost & Scalability**        | Serverless, auto-scaling; pay per use                                                       | You manage cluster size and lifetime; autoscaling optional                                      |
+| **Integration with BigQuery** | Native `BigQueryIO` for writing data                                                        | Supports writing to BigQuery using connectors (Spark BigQuery connector)                        |
+
 
 
 #gsutil commands
