@@ -1,3 +1,25 @@
+| Feature               | Cloud Composer         | Dataflow                    | Dataproc                      |
+| --------------------- | ---------------------- | --------------------------- | ----------------------------- |
+| **Primary Use**       | Workflow orchestration | Data transformation (ETL)   | Spark/Hadoop-based processing |
+| **Based On**          | Apache Airflow         | Apache Beam                 | Apache Spark/Hadoop           |
+| **Streaming Support** | ❌ (but can trigger)    | ✅ Native                    | ⚠️ Limited (Spark Streaming)  |
+| **Batch Support**     | ✅ (schedules batch)    | ✅ Native                    | ✅ Native                      |
+| **Infrastructure**    | Composer-managed       | Serverless                  | You manage clusters (VMs)     |
+| **Scaling**           | Manual/Airflow config  | Auto-scaling                | Manual or autoscaling         |
+| **Languages**         | Python (Airflow DAGs)  | Java, Python (Beam SDKs)    | Python, Scala, Java           |
+| **Best For**          | Orchestrating tools    | Real-time + batch pipelines | Spark-based big data jobs     |
+
+#use case examples
+| Scenario                                                 | Tool               |
+| -------------------------------------------------------- | ------------------ |
+| Schedule a daily pipeline to extract → transform → load  | **Cloud Composer** |
+| Transform real-time Pub/Sub logs into BigQuery           | **Dataflow**       |
+| Migrate legacy Spark/Hadoop jobs to GCP                  | **Dataproc**       |
+| Orchestrate: start Dataflow → wait → load to BQ → notify | **Cloud Composer** |
+| Batch ETL with large Spark transformations               | **Dataproc**       |
+
+
+
 #gsutil commands
 https://cloud.google.com/storage/docs/gsutil/commands/cp
 
