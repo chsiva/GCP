@@ -44,6 +44,12 @@ You can combine these tools:
 | **Encryption keys**   | Stored and managed in Cloud KMS           | Secrets encrypted at rest (can use CMEK) |
 
 
+In short:
+
+ - Use CMEK when you want to control how your data is encrypted at rest in Google Cloud services.
+
+ - Use Secret Manager when you want to securely store and manage sensitive information your apps or services need.
+
 #gsutil commands
 https://cloud.google.com/storage/docs/gsutil/commands/cp
 
