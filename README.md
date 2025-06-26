@@ -34,6 +34,14 @@ You can combine these tools:
 | **Cost & Scalability**        | Serverless, auto-scaling; pay per use                                                       | You manage cluster size and lifetime; autoscaling optional                                      |
 | **Integration with BigQuery** | Native `BigQueryIO` for writing data                                                        | Supports writing to BigQuery using connectors (Spark BigQuery connector)                        |
 
+| Feature               | CMEK                                      | Secret Manager                           |
+| --------------------- | ----------------------------------------- | ---------------------------------------- |
+| **What it manages**   | Encryption keys for data-at-rest          | Secrets like passwords, tokens, keys     |
+| **Primary focus**     | Data encryption control                   | Secure secret storage & retrieval        |
+| **User control**      | You manage encryption keys                | You manage secret values                 |
+| **Typical use cases** | Encrypt BigQuery, Cloud Storage, etc.     | Store API keys, credentials, configs     |
+| **Integration**       | Used by other GCP services for encryption | Used by apps/services to fetch secrets   |
+| **Encryption keys**   | Stored and managed in Cloud KMS           | Secrets encrypted at rest (can use CMEK) |
 
 
 #gsutil commands
