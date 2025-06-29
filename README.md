@@ -57,6 +57,14 @@ https://cloud.google.com/storage/docs/gsutil/commands/cp
 # GCP
 GCP VS AWS
 
+- In GCP Buckets are regional while in AWS buckets are global & GCS bucket for Terraform can store terraform lockfile wile AWS requires Dynamodb
+
+- GCP Cloud firewall operates at VPC level & have both allow & deny rule  &  Stateful: Requires explicit rules for both inbound and outbound traffic.
+  AWS security groups operates at instance level, & have only allow rule  &  Stateless: Responses to allowed traffic are automatically allowed.
+  
+
+
+
 Q. Instance types:
    https://cloud.google.com/compute/docs/machine-types
    
